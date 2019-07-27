@@ -1,13 +1,13 @@
 class Report
-  def self.data(formatter = JsonFormat)
+  def self.data(formatter)
     data = "foobar" # assume that we got it after querying DB
     formatter.format("foobar")
   end
 end
 
-# Now I have a class called Report, which has data as an instance method
+# Now I have a class called Report, which has data as a class method
 # Now I would like to get the report in the json and html format
-# without actually wanting to hard code the information in the Report class
+# without actually wanting to hard code the formatter information in the Report class
 
 
 
